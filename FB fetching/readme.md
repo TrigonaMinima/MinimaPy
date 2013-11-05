@@ -1,0 +1,1 @@
+Here I have fetched the hometowns of my friends on facebook using "facebook graph api" (using facebook.py). Then using "google maps api 3" (using geopy) I got the lats and lngs corresponding to the hometowns. After which using simplekml I made a kml file so that I can use it on indiemapper i plotted them on the map. Thus getting the distribution of my friends across India.
