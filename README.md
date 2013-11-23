@@ -9,3 +9,5 @@ PythonScripts
  
  Fetching hometowns of my friends on facebook and then plotting them on the map. (python 2)
  
+ 
+ Displaying quote from a list of quotes on startup. (python 3)

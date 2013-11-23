@@ -1,5 +1,5 @@
 from html.parser import HTMLParser
-import os.path
+import os, os.path
 import urllib.request
 
 
@@ -37,7 +37,7 @@ with open('alpha.html', 'r') as f:
 			line = f.readline()
 
 f.close()
-g.seek(0)
+'''g.seek(0)
 lines = g.readlines()
 g.seek(0)
 
@@ -76,6 +76,6 @@ for line in lines:
 		if not ((word[0] in line) or (word[1] in line) or (word[2] in line) or (word[3] in line) or (word[4] in line) or (word[5] in line) 
 		or (word[6] in line) or (word[7] in line)) :
 			g.write(line + '\n')
-		
-
+'''
+os.remove("alpha.html")
 g.close()
