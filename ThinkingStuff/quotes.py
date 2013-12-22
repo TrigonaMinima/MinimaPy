@@ -16,12 +16,13 @@ thought30 = g.readlines()
 g.close()
 
 d = date.datetime.now()
-
-if not not thought30 or str(d.day) == thought30[-1]:
+if len(thought30)>1 and str(d.day) == thought30[-1]:
 	todaysThought = thought30[-2]
 else:
-	if d.day > 28:
-		thought30.remove(0)
+	if thought30:
+		thought30.pop(-1)
+	if len(thought30) > 28:
+		thought30.pop(0)
 	while 1:
 		todaysThought = thoughts[random.randrange(0, len(thoughts))]
 		if todaysThought in thought30:
