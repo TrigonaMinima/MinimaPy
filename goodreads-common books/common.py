@@ -11,21 +11,41 @@ goodreads_client = gclient(key, secret)
 def get_books(user_id, shelf_name):
     return goodreads_client.get_shelf(user_id, shelf_name)
 
-u2_books = get_books(uid2, 'to-read')
-u1_books = get_books(uid1, 'to-read')
+u2_books = [book['title'] for book in get_books(uid2, 'to-read')]
+for book in get_books(uid2, 'read'):
+    u2_books.append(book['title'])
+for book in get_books(uid2, 'currently-reading'):
+    u2_books.append(book['title'])
+u2_books.sort()
 
-books_u1 = [book['title'] for book in u1_books]
-books_u2 = [book['title'] for book in u2_books]
+u1_books = [book['title'] for book in get_books(uid1, 'to-read')]
+for book in get_books(uid1, 'read'):
+    u1_books.append(book['title'])
+for book in get_books(uid1, 'currently-reading'):
+    u1_books.append(book['title'])
+u1_books.sort()
 
-common = []
-for i in books_u1:
-    if i in books_u2:
-        common.append(i)
 
-f = open('common.txt', 'w')
-for i in common:
+#unicode(book['title']).encode("utf-8")
+
+
+'''common = []
+for i in u1_books:
+    if i in u2_books:
+        common.append(i)'''
+
+f = open('u1.txt', 'w')
+
+for i in u1_books:
     f.write(i)
     f.write('\n')
 
 f.close()
-print common
+
+f = open('u2.txt', 'w')
+
+for i in u2_books:
+    f.write(unicode(i).encode("utf-8"))
+    f.write('\n')
+
+f.close()
