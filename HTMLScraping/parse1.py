@@ -1,5 +1,6 @@
 from html.parser import HTMLParser
-import os, os.path
+import os
+import os.path
 import urllib.request
 
 
@@ -7,34 +8,34 @@ url = "http://web-japps.ias.ac.in:8080/fellowship2014/selectfellows.jsp?atype=B&
 fileName = "alpha.html"
 
 
-
 class MyHTMLParser(HTMLParser):
-	def handle_data(self, data):
-		if not data == '\n':
-			if "Available" in data or "Status" in data:
-				g.write(data + '\n')
-			else:
-				if data.isalnum():
-					g.write('(' + data + ')' + ' ') #, end = " "
-				else :
-					g.write(data.strip(' ').rstrip('\n') + ' ')# #, end = " "
 
-parser = MyHTMLParser() #strict=False
+    def handle_data(self, data):
+        if not data == '\n':
+            if "Available" in data or "Status" in data:
+                g.write(data + '\n')
+            else:
+                if data.isalnum():
+                    g.write('(' + data + ')' + ' ')  # , end = " "
+                else:
+                    g.write(data.strip(' ').rstrip('\n') + ' ')  # , end = " "
+
+parser = MyHTMLParser()  # strict=False
 
 g = open('parse1.txt', 'w+')
 
 if not (os.path.isfile("/home/shivam/Desktop/html scraping/alpha.html")):
-	f = open(fileName,'wb')
-	with urllib.request.urlopen(url) as alpha:
-		f.write(alpha.read())
-	f.close()
+    f = open(fileName, 'wb')
+    with urllib.request.urlopen(url) as alpha:
+        f.write(alpha.read())
+    f.close()
 
 
 with open('alpha.html', 'r') as f:
-		line = f.readline()
-		while not line == '' :
-			parser.feed(line)
-			line = f.readline()
+    line = f.readline()
+    while not line == '':
+        parser.feed(line)
+        line = f.readline()
 
 f.close()
 '''g.seek(0)
