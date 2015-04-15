@@ -36,6 +36,8 @@ Above command will print the results on the terminal window. Whereas, this will 
 python3.4 choose2t.py > results.txt
 ```
 
+The sample output is shown in the ```results.txt``` file.
+
 ### Assumptions
 
 - In the most retweeted tweets section the frequency is determined for those tweets which were most retweeted. For that purpose, the retweets done by this public account (choosetothinq, in our case) which were retweeted by others were also considered.
