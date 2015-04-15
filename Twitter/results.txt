@@ -1,0 +1,42 @@
+Most frequently used hashtags-
+doolallyq 	:  53  tweets
+c2tlearns 	:  34  tweets
+pune 	:  22  tweets
+
+Most retweeted tweets with links in them-
+{
+    "retweet_count":731,
+    "text":"RT @TheEconomist: If employers paid heed to evidence rather than short-term savings, they would kill the cubicle http://t.co/QTL9g8FjVs htt\u2026",
+    "id":"558866684333662208"
+} 
+
+{
+    "retweet_count":579,
+    "text":"RT @HarvardBiz: What leadership skills do you need the most?http://t.co/bLZY9yjbAV http://t.co/z6O3odZeAY",
+    "id":"497646150384496640"
+} 
+
+{
+    "retweet_count":520,
+    "text":"RT @mashable: The full 'Game of Thrones' Season 5 trailer has leaked online (!!) http://t.co/n8fuc6Pd9l http://t.co/woY4uNuoA2",
+    "id":"561173972264300544"
+} 
+
+{
+    "retweet_count":441,
+    "text":"RT @TEDTalks: \"When we dare to create conflict, we enable ourselves and the people around us to do our very best thinking.\" http://t.co/Gaz\u2026",
+    "id":"571998540660023297"
+} 
+
+{
+    "retweet_count":344,
+    "text":"RT @TEDTalks: \"You can always tell ambitious women by the shape of our heads. They're flat on top from being patted patronizingly.\" http://\u2026",
+    "id":"582611690610552832"
+} 
+
+
+Most frequently used words-
+rt 	:  260  times
+quiz 	:  172  times
+what 	:  67  times
+about 	:  60  times
