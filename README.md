@@ -37,3 +37,12 @@ PythonScripts
 17. ```pdf_2_csv_1.py``` - Extracts tables from a PDF document. First tries to convert it as a whole, if it fails, converts it page by page. Requires the installation of ```Java``` based ```Tabula``` and ```tabula``` python module.
 
 18. ```sql_select_into.py``` - Creates new tables in SQL DB using SELECT INTO using Python.
+
+19. ```prime_gen.py``` - An iterator that generates primes.
+
+20. ```lat_log_2_addr.py``` - Gets address from lat-long using Google Maps API. This is an old code so I am not sure if it'll work now.
+
+21. ```sentence_boundary.py``` - Determines sentence boundaries.
+
+22. ```correct_encoding.py``` - Converts a mixed encoding CSV file into a utf-8 compliant CSV.
+
