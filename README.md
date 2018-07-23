@@ -1,13 +1,12 @@
 PythonScripts
 =============
 
- Parsing from an HTML page to get a few hundred names (python 3)
+1. greads.py - Scraped all the pages of the user's liked list by using HTML scraper and added them to a file.
+
+2. greads_rss.py - Scraped the rss feed of the user's liked quotes and then randomly displayed anyone quote from all the quotes.
+
+3. img_download.py - Downloads an image from a given link.
 
 
- Problem set solutions of the course "MITx: 6.00.1x Introduction to Computer Science and Programming" on edx (python 2)
- 
- 
- Fetching hometowns of my friends on facebook and then plotting them on the map. (python 2)
- 
- 
- Displaying quote from a list of quotes on startup. (python 3)
+
+
