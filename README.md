@@ -46,3 +46,4 @@ PythonScripts
 
 22. ```correct_encoding.py``` - Converts a mixed encoding CSV file into a utf-8 compliant CSV.
 
+23. ```wiki.py``` - Fetches the page contents in plain text. Depends on ```wikipedia``` module. (```pip install wikipedia```)
